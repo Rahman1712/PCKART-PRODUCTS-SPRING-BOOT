@@ -1,0 +1,35 @@
+server:
+  port: 9193
+
+
+#eureka:
+#  client:
+#    register-with-eureka: true
+#    fetch-registry: true
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
+# 
+#spring:
+#  application:
+#    name: PRODUCTS-SERVICE
+
+
+filter.url.patterns: /pckart/api/v1/brands/auth/*,
+                     /pckart/api/v1/products/auth/*,
+                     /pckart/api/v1/categories/auth/*,
+
+jwt:
+  secret:
+    key:
+      products: IaiYw5wsEs9UNE6Y557it0VyIVaMz9PZmXx8EsqlZFM
+
+cors:
+  set:
+    allowed:
+      origins: http://localhost:4200,
+               http://localhost:4201,
+               http://localhost:4401,
+               
+
